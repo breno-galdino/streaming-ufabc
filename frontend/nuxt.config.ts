@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   app: {
       head: {
-          title: 'Custom',
+          title: 'Segurança de Redes',
       },
       pageTransition: { name: 'page', mode: 'out-in' },
   },

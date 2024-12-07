@@ -1,103 +1,43 @@
 <template>
-  <div><p-chart :options="options"></p-chart></div>
+  <v-card color="accent" height="100vh">
+    <v-toolbar color="primary" class="px-4 mb-4">
+      <template v-slot:prepend>
+        <img src="../public/logo-white.png" width="60px" />
+      </template>
+      <template v-slot:append>
+        <v-btn variant="outlined">Login</v-btn>
+      </template>
+      <v-toolbar-title class="text-uppercase"
+        >Segurança de Redes</v-toolbar-title
+      >
+    </v-toolbar>
+
+    <v-row justify="center"
+      ><v-col cols="10" class="text-center">
+        <v-card title="Conteúdo do Curso"
+          ><v-row><v-col cols="4" v-for="materia in materias"><v-card :title="materia.title" height="200px"></v-card></v-col></v-row>
+        </v-card> </v-col></v-row
+  ></v-card>
 </template>
 <script setup>
-const options = {
-  title: {
-    text: 'Stacked Area Chart'
+const materias = [
+  {
+    title: "Apresentação e introdução à segurança da informação",
   },
-  tooltip: {
-    trigger: 'axis',
-    axisPointer: {
-      type: 'cross',
-      label: {
-        backgroundColor: '#6a7985'
-      }
-    }
+  {
+    title: "Criptografia simétrica e de chave pública",
   },
-  legend: {
-    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
+  {
+    title: "Assinatura digital, ICP e certificados",
   },
-  toolbox: {
-    feature: {
-      saveAsImage: {}
-    }
+  {
+    title: "Blockchain",
   },
-  grid: {
-    left: '3%',
-    right: '4%',
-    bottom: '3%',
-    containLabel: true
+  {
+    title: "Ataques e mecanismos de defesa em redes",
   },
-  xAxis: [
-    {
-      type: 'category',
-      boundaryGap: false,
-      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-    }
-  ],
-  yAxis: [
-    {
-      type: 'value'
-    }
-  ],
-  series: [
-    {
-      name: 'Email',
-      type: 'line',
-      stack: 'Total',
-      areaStyle: {},
-      emphasis: {
-        focus: 'series'
-      },
-      data: [120, 132, 101, 134, 90, 230, 210]
-    },
-    {
-      name: 'Union Ads',
-      type: 'line',
-      stack: 'Total',
-      areaStyle: {},
-      emphasis: {
-        focus: 'series'
-      },
-      data: [220, 182, 191, 234, 290, 330, 310]
-    },
-    {
-      name: 'Video Ads',
-      type: 'line',
-      stack: 'Total',
-      areaStyle: {},
-      emphasis: {
-        focus: 'series'
-      },
-      data: [150, 232, 201, 154, 190, 330, 410]
-    },
-    {
-      name: 'Direct',
-      type: 'line',
-      stack: 'Total',
-      areaStyle: {},
-      emphasis: {
-        focus: 'series'
-      },
-      data: [320, 332, 301, 334, 390, 330, 320]
-    },
-    {
-      name: 'Search Engine',
-      type: 'line',
-      stack: 'Total',
-      label: {
-        show: true,
-        position: 'top'
-      },
-      areaStyle: {},
-      emphasis: {
-        focus: 'series'
-      },
-      data: [820, 932, 901, 934, 1290, 1330, 1320]
-    }
-  ]
-}
-
-const { result } = useQuery(query)
+  {
+    title: "Gestão de segurança da informação",
+  },
+];
 </script>

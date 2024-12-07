@@ -16,9 +16,9 @@ const vuetify = createVuetify({
       customPlus: {
         dark: false,
         colors: {
-          primary: "#612E8F",
-          secondary: "#3D2E8F",
-          accent: "#7D2B8F",
+          primary: "#0e5a3c",
+          secondary: "#fecd08", 
+          accent: "#D3D3D3", 
           success: "#3f8255",
           warning: "#dfb256",
           error: "#c6453a",
