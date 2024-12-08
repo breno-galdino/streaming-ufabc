@@ -26,14 +26,6 @@ const AsyncWrapper = defineComponent({
 const login = () => {
   auth0.loginWithRedirect();
 };
-
-const logout = () => {
-  auth0.logout({
-    logoutParams: {
-      returnTo: window.location.origin,
-    },
-  });
-};
 </script>
 
 <template>
