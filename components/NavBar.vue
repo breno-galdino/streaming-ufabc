@@ -29,7 +29,7 @@
         :class="isActive ? 'i-ph-house-fill text-primary' : 'i-ph-house'"
       />
     </NuxtLink>
-    <NuxtLink v-slot="{ isActive }" to="/movie" :title="$t('Movies')">
+    <NuxtLink v-slot="{ isActive }" to="/movie" :title="$t('Movies')" v-if="authenticated">
       <div
         text-2xl
         :class="
@@ -37,7 +37,7 @@
         "
       />
     </NuxtLink>
-    <NuxtLink v-slot="{ isActive }" to="/tv" :title="$t('TV Shows')">
+    <NuxtLink v-slot="{ isActive }" to="/tv" :title="$t('TV Shows')" v-if="authenticated">
       <div
         text-2xl
         :class="
@@ -47,7 +47,7 @@
         "
       />
     </NuxtLink>
-    <NuxtLink v-slot="{ isActive }" to="/search" :title="$t('Search')">
+    <NuxtLink v-slot="{ isActive }" to="/search" :title="$t('Search')" v-if="authenticated">
       <div
         text-2xl
         :class="

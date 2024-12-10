@@ -34,7 +34,7 @@ useHead({
     <div id="app-scroller" of-x-hidden of-y-auto relative>
       <NuxtPage />
     </div>
-    <NavBar lg:order-first />
+    <NavBar lg:order-first/>
     <IframeModal />
     <PhotoModal />
   </div>
