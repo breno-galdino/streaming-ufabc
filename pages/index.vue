@@ -6,7 +6,7 @@ import { useAuth0 } from "@auth0/auth0-vue";
 // const { loginWithRedirect } = useAuth0();
 const auth0 = useAuth0();
 const authenticated = computed(() => {
-  return auth0.isAuthenticated.value ?? false;
+  return auth0?.isAuthenticated.value ?? false;
 });
 
 const route = useRoute();
