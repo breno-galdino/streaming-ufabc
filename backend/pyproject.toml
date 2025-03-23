@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Breno Galdino"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1.0.0"
+msal = "^1.30.0"
+pyodbc = "^5.0.1"
+pydantic-settings = "^2.1.0"
+taskipy = "^1.12.2"
+alembic = "^1.13.1"
+isort = "^5.13.2"
+pyjwt = "^2.9.0"
+black = "^24.8.0"
+fastapi = {extras = ["standard"], version = "^0.115.11"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.taskipy.tasks]
+run = "fastapi dev app/main.py"
