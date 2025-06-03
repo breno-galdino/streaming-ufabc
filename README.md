@@ -12,6 +12,8 @@
 
 ## Screenshots
 
+<img width="1191" src="./frontend/public/screenshot-0.png">
+<img width="1191" src="./frontend/public/screenshot-01.png">
 <img width="1191" src="./frontend/public/screenshot-1.png">
 <img width="1191" src="./frontend/public/screenshot-2.png">
 <img width="1191" src="./frontend/public/screenshot-3.png">
