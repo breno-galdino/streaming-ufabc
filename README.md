@@ -2,9 +2,10 @@
 <img height="100px" src="./frontend/public/logo.png" />
 </p>
 
-<h1 align="center">Nuxt Movies</h1>
+<h1 align="center">UFABC Movies</h1>
 <br>
 
+> Project for the UFABC course "Segurança em Redes" (Network Security) using Template Example Nuxt 3.
 > Movies app demo built using [Nuxt 3](https://github.com/nuxt/nuxt), [Vue 3](https://github.com/vuejs/core), [UnoCSS](https://github.com/unocss/unocss), [Image Module](https://v1.image.nuxtjs.org), [The Movie Database](https://www.themoviedb.org) [API](https://www.themoviedb.org/documentation/api) and [TypeScript](https://github.com/microsoft/TypeScript).
 
 **🍿 Live preview:** https://seguranca-redes.vercel.app
@@ -14,7 +15,6 @@
 <img width="1191" src="./frontend/public/screenshot-1.png">
 <img width="1191" src="./frontend/public/screenshot-2.png">
 <img width="1191" src="./frontend/public/screenshot-3.png">
-<img width="1191" src="./frontend/public/screenshot-4.png">
 
 ## Proxy Server
 
